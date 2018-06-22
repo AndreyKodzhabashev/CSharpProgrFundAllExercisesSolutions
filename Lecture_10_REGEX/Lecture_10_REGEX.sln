@@ -7,8 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_Pr04_Weather", "Ex10_Pr04_Weather\Ex10_Pr04_Weather.csproj", "{7C2A3E38-8748-41CC-9E9F-6EF5C9162D6C}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EX10_Pr03_CameraView_REGEX", "EX10_Pr03_CameraView_REGEX\EX10_Pr03_CameraView_REGEX.csproj", "{CB17A76C-17A6-44AF-9A42-7BA7D6CD6FF6}"
 EndProject
+=======
+>>>>>>> 26eb077824a8766ea57fd52a9aef6b753ac367e1
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +26,13 @@ Global
 		{7C2A3E38-8748-41CC-9E9F-6EF5C9162D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C2A3E38-8748-41CC-9E9F-6EF5C9162D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C2A3E38-8748-41CC-9E9F-6EF5C9162D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{CB17A76C-17A6-44AF-9A42-7BA7D6CD6FF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CB17A76C-17A6-44AF-9A42-7BA7D6CD6FF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB17A76C-17A6-44AF-9A42-7BA7D6CD6FF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB17A76C-17A6-44AF-9A42-7BA7D6CD6FF6}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> 26eb077824a8766ea57fd52a9aef6b753ac367e1
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
