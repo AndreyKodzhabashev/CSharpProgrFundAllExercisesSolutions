@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EX10_Pr03_CameraView_REGEX"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_Pr06_ValidUsernames", "Ex10_Pr06_ValidUsernames\Ex10_Pr06_ValidUsernames.csproj", "{EA243200-08A2-4DEC-96D9-5DC6A7E01FEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex10_Pr01_ExtractEmails", "Ex10_Pr01_ExtractEmails\Ex10_Pr01_ExtractEmails.csproj", "{D30B8293-BEED-48F4-8BB9-08B3DBEA052B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{EA243200-08A2-4DEC-96D9-5DC6A7E01FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA243200-08A2-4DEC-96D9-5DC6A7E01FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA243200-08A2-4DEC-96D9-5DC6A7E01FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D30B8293-BEED-48F4-8BB9-08B3DBEA052B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D30B8293-BEED-48F4-8BB9-08B3DBEA052B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D30B8293-BEED-48F4-8BB9-08B3DBEA052B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D30B8293-BEED-48F4-8BB9-08B3DBEA052B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
