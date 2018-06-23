@@ -41,11 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_July_2017_Pr04_PokemonEv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Jan_2018_SnowWhite var 2", "05_Jan_2018_SnowWhite var 2\05_Jan_2018_SnowWhite var 2.csproj", "{7E71CCE1-E4F4-49A2-911C-ECCDD8497FFE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Nov_2017_Pr02_Anonymous_Threat", "05.Nov.2017 Pr02 Anonymous Threat\05_Nov_2017_Pr02_Anonymous_Threat.csproj", "{2CE43BDA-FED0-4CD0-9F96-AA63E8151204}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Nov_2018_Pr03_AnonimousVox_var2", "05_Nov_2018_Pr03_AnonimousVox_var2\05_Nov_2018_Pr03_AnonimousVox_var2.csproj", "{EB36FAEB-F5F7-4C1B-B9FC-BADB286A7164}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Nov_2018_Pr03_AnonimousVox", "05_Nov_2018_Pr03_AnonimousVox\05_Nov_2018_Pr03_AnonimousVox.csproj", "{548AA887-8A31-4A06-B501-015BD1B09340}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Nov_2017_Pr02_Anonymous_Threat", "05_Nov_2017 Pr02 Anonymous Threat\05_Nov_2017_Pr02_Anonymous_Threat.csproj", "{1DD17A1D-22BC-4BAD-9625-045B2D9C9AFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,10 +129,6 @@ Global
 		{7E71CCE1-E4F4-49A2-911C-ECCDD8497FFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E71CCE1-E4F4-49A2-911C-ECCDD8497FFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E71CCE1-E4F4-49A2-911C-ECCDD8497FFE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CE43BDA-FED0-4CD0-9F96-AA63E8151204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CE43BDA-FED0-4CD0-9F96-AA63E8151204}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CE43BDA-FED0-4CD0-9F96-AA63E8151204}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CE43BDA-FED0-4CD0-9F96-AA63E8151204}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB36FAEB-F5F7-4C1B-B9FC-BADB286A7164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB36FAEB-F5F7-4C1B-B9FC-BADB286A7164}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB36FAEB-F5F7-4C1B-B9FC-BADB286A7164}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -141,6 +137,10 @@ Global
 		{548AA887-8A31-4A06-B501-015BD1B09340}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{548AA887-8A31-4A06-B501-015BD1B09340}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{548AA887-8A31-4A06-B501-015BD1B09340}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DD17A1D-22BC-4BAD-9625-045B2D9C9AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DD17A1D-22BC-4BAD-9625-045B2D9C9AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DD17A1D-22BC-4BAD-9625-045B2D9C9AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DD17A1D-22BC-4BAD-9625-045B2D9C9AFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
