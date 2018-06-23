@@ -1,48 +1,44 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace _05_Nev_2018_Pr03_AnonimousVox
 {
+    // 100/100 - not my code
     class _05_Nov_2018_Pr03_AnonimousVox
     {
         static void Main()
         {
-            StringBuilder sb = new StringBuilder(); 
-            string encrMessage = Console.ReadLine();
 
-            string replacements = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            //finding Start and End
+            string[] values = Console.ReadLine()
+                            .Trim()
+                            .Split(new string[] { "{", "}" }, StringSplitOptions
+                            .RemoveEmptyEntries)
+                            .ToArray();
 
-            string start = string.Empty;
+            string pattern = @"([a-zA-Z]+)(.+)(\1)";
 
-            for (int i = encrMessage.Length -1; i >= 0; i--)
+            Regex reg = new Regex(pattern);
+            int index = 0;
+
+            MatchCollection matches = reg.Matches(input);
+
+            foreach (Match item in matches)
             {
-                sb.Append(encrMessage[i]);
-            }
-            encrMessage = sb.ToString();
-
-            sb.Clear();
-
-            for (int i = 0; i < encrMessage.Length; i++)
-            {
-                sb.Append(encrMessage[i]);
-
-                if (encrMessage.Contains(sb.ToString()) == false)
+                if (index < values.Length)
                 {
-                    break;
+                    string currentValue = values[index];
+                    Regex regex = new Regex(Regex.Escape(item.Groups[2].Value));
+                    input = regex.Replace(input, values[index], 1);
                 }
+
+                index++;
             }
-             start = sb.ToString();
 
-
-
-
-
-
-
-            Console.WriteLine();
+            Console.WriteLine(input);
         }
     }
 }
