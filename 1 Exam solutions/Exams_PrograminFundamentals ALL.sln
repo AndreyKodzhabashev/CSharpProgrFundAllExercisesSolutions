@@ -41,11 +41,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09_July_2017_Pr04_PokemonEv
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Jan_2018_SnowWhite var 2", "05_Jan_2018_SnowWhite var 2\05_Jan_2018_SnowWhite var 2.csproj", "{7E71CCE1-E4F4-49A2-911C-ECCDD8497FFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Nov_2018_Pr03_AnonimousVox_var2", "05_Nov_2018_Pr03_AnonimousVox_var2\05_Nov_2018_Pr03_AnonimousVox_var2.csproj", "{EB36FAEB-F5F7-4C1B-B9FC-BADB286A7164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Nov_2018_Pr03_AnonimousVox_var2", "05_Nov_2018_Pr03_AnonimousVox_var2\05_Nov_2018_Pr03_AnonimousVox_var2.csproj", "{EB36FAEB-F5F7-4C1B-B9FC-BADB286A7164}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Nov_2018_Pr03_AnonimousVox", "05_Nov_2018_Pr03_AnonimousVox\05_Nov_2018_Pr03_AnonimousVox.csproj", "{548AA887-8A31-4A06-B501-015BD1B09340}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Nov_2017_Pr02_Anonymous_Threat", "05_Nov_2017_Pr02 Anonymous Threat\05_Nov_2017_Pr02_Anonymous_Threat.csproj", "{DAA3340D-417A-4FAC-9180-E6EEA7DD2F24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPrepII_Pr03_NetherRealms", "ExamPrepII_Pr03_NetherRealms\ExamPrepII_Pr03_NetherRealms.csproj", "{D4A03E68-E33F-43A0-A498-077190D70723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPrepII_Pr04_RoliTheCoder", "ExamPrepII_Pr04_RoliTheCoder\ExamPrepII_Pr04_RoliTheCoder.csproj", "{F7525440-FB0E-48AA-8E2E-DB4E79CCE390}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +145,14 @@ Global
 		{DAA3340D-417A-4FAC-9180-E6EEA7DD2F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DAA3340D-417A-4FAC-9180-E6EEA7DD2F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DAA3340D-417A-4FAC-9180-E6EEA7DD2F24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A03E68-E33F-43A0-A498-077190D70723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A03E68-E33F-43A0-A498-077190D70723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A03E68-E33F-43A0-A498-077190D70723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A03E68-E33F-43A0-A498-077190D70723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7525440-FB0E-48AA-8E2E-DB4E79CCE390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7525440-FB0E-48AA-8E2E-DB4E79CCE390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7525440-FB0E-48AA-8E2E-DB4E79CCE390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7525440-FB0E-48AA-8E2E-DB4E79CCE390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
