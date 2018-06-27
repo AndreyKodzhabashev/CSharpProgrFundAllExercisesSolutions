@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace ExamPrepIII_Pr02_Command_Interpreter
 {
@@ -9,121 +9,99 @@ namespace ExamPrepIII_Pr02_Command_Interpreter
     {
         static void Main()
         {
-            //65/100
-            List<string> textForManipulations = Regex.Split(Console.ReadLine(), @"\s+").ToList();
+            List<string> input = Console.ReadLine()
+                .Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
+                .ToList();
+
+            int start = 0;
+            int count = 0;
+            List<string> currList = new List<string>();
 
             while (true)
             {
-                string commandLine = Console.ReadLine();
-                // break condition
-                if (commandLine == "end")
+                string[] command = Console.ReadLine()
+                    .Split();
+
+                if (command[0].Equals("end", StringComparison.InvariantCultureIgnoreCase))
                 {
                     break;
                 }
 
-                //command split and check
-                string[] arrCommands = commandLine.Split();
-
-                string currentCommand = arrCommands[0];
-                int index = 0;
-                int count = 0;
-
-                if (currentCommand == "reverse" || currentCommand == "sort")
-                {
-                    index = int.Parse(arrCommands[2]);
-                    count = int.Parse(arrCommands[4]);
-                }
-                else
-                {
-                    count = int.Parse(arrCommands[1]);
-                }
-
-
-                if (index < 0 || index > textForManipulations.Count - 1 || count < 0)
-                {
-                    Console.WriteLine("Invalid input parameters.");
-                    continue;
-                }
-
-                //manipulations
-                switch (currentCommand)
+                switch (command[0])
                 {
                     case "reverse":
+                        start = int.Parse(command[2]);
+                        count = int.Parse(command[4]);
 
-                        List<string> start = textForManipulations.Take(index).ToList();
-                        List<string> middle = textForManipulations.Skip(index).Take(count).Reverse().ToList();
-                        List<string> end = textForManipulations.Skip(index + count).ToList();
+                        if (start < 0 || start >= input.Count || (start + count) > input.Count || count < 0)
+                        {
+                            Console.WriteLine("Invalid input parameters.");
+                            break;
+                        }
 
-                        List<string> temp = new List<string>();
-                        start.AddRange(middle);
-                        start.AddRange(end);
-
-                        textForManipulations = start;
-
+                        currList = input.Skip(start).Take(count).Reverse().ToList();
+                        input.RemoveRange(start, count); // Освобождаваме местата , на които ще вмъкнем новия List;
+                        input.InsertRange(start, currList);
                         break;
 
                     case "sort":
-                        List<string> start1 = textForManipulations.Take(index).ToList();
-                        List<string> middle1 = textForManipulations.Skip(index).Take(count).ToList();
+                        start = int.Parse(command[2]);
+                        count = int.Parse(command[4]);
 
-                        middle1.Sort();
+                        if (start < 0 || (start + count) > input.Count || count < 0 || start >= input.Count)
+                        {
+                            Console.WriteLine("Invalid input parameters.");
+                            break;
+                        }
 
-                        List<string> end1 = textForManipulations.Skip(index + count).ToList();
-
-                        List<string> temp1 = new List<string>();
-                        start1.AddRange(middle1);
-                        start1.AddRange(end1);
-
-                        textForManipulations = start1;
-
+                        currList = input.Skip(start).Take(count).OrderBy(str => str).ToList(); // str е в скобите , за да помним , че това, което сортираме е string;
+                        input.RemoveRange(start, count); // Освобождаваме местата , на които ще вмъкнем новия List;
+                        input.InsertRange(start, currList);
                         break;
 
                     case "rollLeft":
+                        count = int.Parse(command[1]);
 
-                        //List<string> tempText = textForManipulations.Take(count).ToList();
-
-                        //textForManipulations = textForManipulations.Skip(count).ToList();
-
-                        //textForManipulations.AddRange(tempText);
-
-                        for (int i = 0; i < count; i++)
+                        if (count < 0)
                         {
-                            string tempNum = textForManipulations[0];
-                            for (int z = 0; z < textForManipulations.Count - 1; z++)
-                            {
-                                textForManipulations[z] = textForManipulations[z + 1];
-                            }
-                            textForManipulations[textForManipulations.Count - 1] = tempNum;
+                            Console.WriteLine("Invalid input parameters.");
+                            break;
                         }
 
+                        for (int i = 0; i < count % input.Count; i++)
+                        {
+                            string element = input[0];
+                            input.RemoveAt(0);
+                            input.Add(element);
+                        }
 
                         break;
 
                     case "rollRight":
+                        count = int.Parse(command[1]);
 
-                        //List<string> tempText1 = textForManipulations.Skip(textForManipulations.Count - count).ToList();
-
-                        //textForManipulations = textForManipulations.Take(textForManipulations.Count - count).ToList();
-
-                        //tempText1.AddRange(textForManipulations);
-
-                        //textForManipulations = tempText1;
-                        for (int i = 0; i < count; i++)
+                        if (count < 0)
                         {
-                            string tempNum = textForManipulations[textForManipulations.Count - 1];
-                            for (int z = textForManipulations.Count - 1; z > 0; z--)
-                            {
-                                textForManipulations[z] = textForManipulations[z - 1];
-                            }
-                            textForManipulations[0] = tempNum;
+                            Console.WriteLine("Invalid input parameters.");
+                            break;
                         }
-                       
 
+                        for (int i = 0; i < count % input.Count; i++)
+                        {
+                            string element = input[input.Count - 1];
+                            input.RemoveAt(input.Count - 1);
+                            input.Insert(0, element);
+                        }
+
+                        break;
+                    default:
                         break;
                 }
             }
 
-            Console.WriteLine($"[{string.Join(", ", textForManipulations)}]");
+            string output = string.Join((", "), input);
+            Console.WriteLine($"[{output}]");
+
         }
     }
 }
