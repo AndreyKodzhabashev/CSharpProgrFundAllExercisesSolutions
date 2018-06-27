@@ -6,11 +6,10 @@ namespace _05_Nov_2018_Pr04_AnonimousCache
 {
     class _05_Nov_2018_Pr04_AnonimousCache
     {
+        // 100/100
         static void Main()
         {
-            // 100/100
-
-
+            
             Dictionary<string, Dictionary<string, long>> dictColectedData = new Dictionary<string, Dictionary<string, long>>();
 
             Dictionary<string, Dictionary<string, long>> dictTempDataStore = new Dictionary<string, Dictionary<string, long>>();
