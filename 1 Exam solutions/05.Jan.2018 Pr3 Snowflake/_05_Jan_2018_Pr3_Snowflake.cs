@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace _05.Jan._2018_Pr3_Snowflake
 {
-    // 90/100
+    // 100/100
     class _05_Jan_2018_Pr3_Snowflake
     {
         static void Main()
@@ -16,33 +16,27 @@ namespace _05.Jan._2018_Pr3_Snowflake
             string totalSnowflake = Console.ReadLine();
             string mantle1 = Console.ReadLine();
             string surface1 = Console.ReadLine();
-            //DONE
 
             //TODO - creating REGEX patterns according the specified rules
-            string surfacePattern = @"([^\w]+)";
+            string surfacePattern = @"^([^A-Za-z0-9]+)$";
             string mantlePattern = @"^([0-9_]+)$";
-            string totalFlakePattern = @"([^\w]+)([0-9_]+)([A-Za-z]+)([0-9_]+)([^\w]+)";
-            //DONE
+            string totalFlakePattern = @"([^A-Za-z0-9]+)([0-9_]+)([A-Za-z]+)([0-9_]+)([^A-Za-z0-9]+)";
 
             //TODO - decraring REGEX with the suitable pattern
             Regex regexSf = new Regex(surfacePattern);
             Regex regexMn = new Regex(mantlePattern);
             Regex regexCr = new Regex(totalFlakePattern);
-            Regex regexMn1 = new Regex(mantlePattern);
-            Regex regexSf1 = new Regex(surfacePattern);
-            //DONE
-
+            
             //TODO - virification if the given input lines are correct
+            //as the start and end Surface and Mantel have to be equal, we use the same regex pattern for verification
             bool isValidSurface = regexSf.IsMatch(surface);
             bool isValidMantle = regexMn.IsMatch(mantle);
             bool isValidCore = regexCr.IsMatch(totalSnowflake);
-            bool isValidMantle1 = regexMn1.IsMatch(mantle1);
-            bool isValidSurface1 = regexSf1.IsMatch(surface1);
-            //DONE
+            bool isValidMantle1 = regexMn.IsMatch(mantle1);
+            bool isValidSurface1 = regexSf.IsMatch(surface1);
 
             //TODO = extracting a MATCH form the total Snowflake input line
             Match finalCore = regexCr.Match(totalSnowflake);
-            //DONE
 
             //TODO - if all bools are VALID print "Valid" and the count of group 3, which should be the Snowflake core
             if (isValidSurface && isValidMantle && isValidSurface1 && isValidMantle1 && isValidCore)
@@ -50,12 +44,11 @@ namespace _05.Jan._2018_Pr3_Snowflake
                 Console.WriteLine("Valid");
                 Console.WriteLine(finalCore.Groups[3].Value.Length);
             }
-            //if only one line is invalid - the whole given input is INVALID
+            //if even one line is invalid
             else
             {
                 Console.WriteLine("Invalid");
             }
-            //DONE
         }
     }
 }

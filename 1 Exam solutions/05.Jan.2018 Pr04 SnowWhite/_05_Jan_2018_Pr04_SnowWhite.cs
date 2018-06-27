@@ -50,7 +50,7 @@ namespace _05.Jan._2018_Pr04_SnowWhite
                         listDwarfs.RemoveAt(indexOfExistingDwarf);
                         listDwarfs.Add(currentDwarf);
                     }
-                    //currentDwarf.Physics = Math.Max(currentDwarf.Physics, dwarfPhysics);
+                   
                 }
             }
 
