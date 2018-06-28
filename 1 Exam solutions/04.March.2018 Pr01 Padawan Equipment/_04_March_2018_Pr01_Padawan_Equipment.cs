@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace _04.March._2018_Pr01_Padawan_Equipment
 {
