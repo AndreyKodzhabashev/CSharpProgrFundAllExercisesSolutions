@@ -71,7 +71,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamPrepIV_Pr04_Cubics_Mess
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamPrepIV_Pr03_Football_Standings", "ExamPrepIV_Pr03_Football_Standings\ExamPrepIV_Pr03_Football_Standings.csproj", "{700258E3-28A3-411C-8E83-F4CF200FEDC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExamPrepIV_Pr02_Array_Manipulator_var_2", "ExamPrepIV_Pr02_Array_Manipulator_var_2\ExamPrepIV_Pr02_Array_Manipulator_var_2.csproj", "{246BCE68-EE65-441B-9637-864BB6B2534B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamPrepIV_Pr02_Array_Manipulator_var_2", "ExamPrepIV_Pr02_Array_Manipulator_var_2\ExamPrepIV_Pr02_Array_Manipulator_var_2.csproj", "{246BCE68-EE65-441B-9637-864BB6B2534B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26_Feb_2017_Hornet_Wings", "26_Feb_2017_Hornet_Wings\26_Feb_2017_Hornet_Wings.csproj", "{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,6 +221,10 @@ Global
 		{246BCE68-EE65-441B-9637-864BB6B2534B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{246BCE68-EE65-441B-9637-864BB6B2534B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{246BCE68-EE65-441B-9637-864BB6B2534B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
