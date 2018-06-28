@@ -75,6 +75,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExamPrepIV_Pr02_Array_Manip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26_Feb_2017_Hornet_Wings", "26_Feb_2017_Hornet_Wings\26_Feb_2017_Hornet_Wings.csproj", "{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "26_Feb_2017_Pr02_Hornet_Comm", "26_Feb_2017_Pr02_Hornet_Comm\26_Feb_2017_Pr02_Hornet_Comm.csproj", "{EC4DD138-9686-4421-9665-B8108B2F7CCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DC0BEBF-4A9E-437C-8DDA-C906E4840A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4DD138-9686-4421-9665-B8108B2F7CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4DD138-9686-4421-9665-B8108B2F7CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4DD138-9686-4421-9665-B8108B2F7CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4DD138-9686-4421-9665-B8108B2F7CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
