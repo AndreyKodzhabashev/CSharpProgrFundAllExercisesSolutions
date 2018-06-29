@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace _26_Feb_2017_Pr03_Hornet_Assault
 {
-    // 90/100  - 1 time limit error
+    // 100/100  
     class _26_Feb_2017_Pr03_Hornet_Assault
     {
         static void Main()
@@ -23,7 +23,11 @@ namespace _26_Feb_2017_Pr03_Hornet_Assault
             for (long i = 0; i < hives.Length; i++)
             {
 
-                long hornetsPower = hornets.Sum();
+                long hornetsPower = 0;
+                for (int j = 0; j < hornets.Length; j++)
+                {
+                    hornetsPower += hornets[j];
+                }
 
                 if (hornetsPower < 1)
                 {
